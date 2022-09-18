@@ -1,0 +1,170 @@
+vm ekaka kali damma 
+[ install karala naha hode nikan live kiyala balana option eke inne ]
+mulin netwok eka nat tiyageana api eliyen access karamu balanna 
+ssh ganna yanne 
+[ meehemai , hub ekkin network eka hAdila tyenne . eliya idala athuata enna pluwan . but kali eke athule idala eliiyata yanna pluwan da balamu ping ekak daala
+kali wala idala windows [vm eke idala   main pc eka] ping wewna 
+ but 10.0.2.15 kiyana ip eka [ kali wala thibbe ee ip eka windows eke thibbe 192.168.38.132 ] windows walin ping wenne naha en 
+kali ekata ssh ganna giyaa eeth bAri una 
+
+
+
+hari dan adapter eka bridge daala balamu
+
+dAn depAtthatama ping wenwa 
+
+nat ekedi  eliye eewa ping karanna pluwan . but windows ekaata athulata ping karanna baha . eekai rahasa . ee nisa vm ekee aarakshithai but windows eka sage naha ithin . ayi kaali wala ekaata access tyenwa ne 
+
+ithin bridge daala ssh ganna hadaddi ganna baha 
+connection refused 
+
+so api google karala balmu ayi kiyala 
+
+hari mehema ne meeka thaama install karalawath naha 
+use kenek wath naha 
+e nisa amaru wei 
+api balamu me site ekaka widihata karala 
+
+https://www.lmgsecurity.com/enable-start-ssh-kali-linux/
+uda site eke widihata kala
+
+
+site eke widihata kalaa
+
+but thaama moba eken access naha 
+
+netstat -tunlp ekath kiyanawa port eka listening kiyala 
+mn baluwa internally pluwan da kiyala terminal eken access ganna 
+eeth refuse wenwa 
+
+website eke tyena 
+/etc/ssh/sshd_config
+file eke 
+PubkeyAuthentication yes
+kiyana eka yes daala baluwa [ kalin baluwae no daala ]
+dan nam kali eke terminal eken ma ssh ganna yaddi password eka hari illanwa 
+but eliyen moba eterm ekkin ganna yaddi connection refused 
+
+
+balamu kali linux eke port ekkuth open karala 
+
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+gahala vm eka restart kalaa
+balamu wAdee 
+[ restart kalranna kalin folder ekkuth haduwa desktop eke . eeka restart eken passe ithuru wela thiyenwa da balanna . 
+restart ekken passe folder eka left welaaaa . ehenm ithin anith changes rAdenne naha . so api kali installl karamu 
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mee pahala kramaya works 
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+hari install kalaa
+mulin nat daala balamu  ping from both side saha ssh ganna pluwanda kiala
+
+
+
+iilagata bridge dala balamu 
+mulin nat daala balamu  ping from both side saha ssh ganna pluwanda kiala
+
+
+
+nat ekedi 
+
+vm eken windows pc eka ping wenwa
+windows eken ping ganna baha 
+
+
+so api dAn meeka bridge karamu
+
+ping wenwa depatthatama 
+
+systemctl status ssh
+
+kiyala gahuwama eeka enable naha saha stopped kiyala wAtenwa 
+
+systemctl start ssh
+
+gahala aaya status baluwa
+
+dan active lu 
+dan moba eke balamu
+
+
+ammo 
+dan nam connection refused kiyala enne naha 
+
+dan 
+login wenna uname sahha password ahanw 
+
+
+but password eka gahuwama thaama connection refuse karanwa 
+
+
+hammo hadaagattha
+
+vi /etc/ssh/sshd_config
+ekata giyaa
+
+eeke 
+PermitRootLogin  kiyana eka thiyenne prohibit-password kiyala 
+eeka 
+yes denna 
+
+PermitRootLogin  yes
+
+wage 
+
+ita passse
+
+systemctl restart ssh
+
+patta saralai 
+
+uda mama liyala tyenwa site ekak balaana kara ekak 
+
+eeka boru wAdak 
+
+oyata tyenne 
+
+ssh start karanna witarai 
+
+wena mukuth naha 
+
+eeka karala ita passe file ekak change karala meeka restart kalaama hari 
+
+
+saralai 
+
+
+
+
+
+
+
+
+
