@@ -161,7 +161,9 @@ eeka karala ita passe file ekak change karala meeka restart kalaama hari
 saralai  kisi deyak install karannna naha 
 
 
-
+HAbayi mehemai
+Install karanne nAthuwa try kalaane uda step eke. Ekedi karaganna bAri unane wAde. Eekedi mama kaleth wena bahubuuthayak. Me widihata simply ssh start karala file ekak change kala eka newe kalee
+But install nokara unath ee widihata mama wAde kalaanm samaharawita ssh wAda karanna ida thibba. Anith hAmadeema wAdanm ooka wAda nokaranna widihak nhne 
 
 
 
