@@ -60,4 +60,8 @@ and added net.ipv6.conf.all.disable_ipv6=1
 to the last line. I then ran 
 sudo sysctl -p. Then everything worked perfectly.
 
+worked
+
+mama hithanne ipv6 address ekak widihata www.google.com kiyana eika hithanawada danne naha system eka 
+e nisa eeka ip ekak widihata treat wena wa da danne naha  . but nat eke ipv6 nathuwa athi 
 
